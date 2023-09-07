@@ -1,6 +1,6 @@
-# Namaste React!!
+# Food ordering app!!
 
-This is a food ordering app built in React.js.
+This is a food ordering app built using React.js and TailwindCSS.
 
 ## App structure
 

@@ -16,7 +16,7 @@ const Body = () => {
 	/* This is used to check the online status of the user */
 	const onlineStatus = useOnlineStatus();
 
-	const RestaurantCardWithPromotedLabel = withPromotedLabel(RestaurantCard);
+	// const RestaurantCardWithPromotedLabel = withPromotedLabel(RestaurantCard);
 
 	useEffect(() => {
 		fetchData();
@@ -25,7 +25,7 @@ const Body = () => {
 	/* fetch data from API */
 	const fetchData = async () => {
 		const data = await fetch(
-			"https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.1458004&lng=79.0881546&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+			"https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.1458004&lng=79.0881546&page_type=DESKTOP_WEB_LISTING"
 		);
 		const json = await data.json();
 		setTopCarousel(
